@@ -1,4 +1,4 @@
-
+#!/bin/bash
 #------------------------Pre-Modification----------------------------------------------------
 mkdir RIC
 cd RIC
@@ -9,8 +9,6 @@ git clone https://gerrit.o-ran-sc.org/r/it/dep
 cd /home/cloudadmin/RIC/dep
 git checkout 189c974169043e89fa216df5ca638fb550e041e4
 cat <<EOF >runric_env.sh
-
-#!/bin/bash
 ################################################################################
 #   Copyright (c) 2019 AT&T Intellectual Property.                             #
 #   Copyright (c) 2019 Nokia.                                                  #
@@ -87,7 +85,6 @@ sed -i 's,rancodev:5555,rancodev,g' ./prepull.sh
 sed -i 's/docker logout/#/' ./prepull.sh
 sed -i 's/docker login/#/' ./prepull.sh
 
-#!/bin/bash
 #-----------------Installation--------------------------------------------------------------------
 #--------------Reloading docker images-----------------------------------------------------------
 echo "docker" | sh ./prepull.sh
