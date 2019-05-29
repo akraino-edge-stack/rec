@@ -87,7 +87,7 @@ sed -i 's,rancodev:5555,rancodev,g' ./prepull.sh
 sed -i 's/docker logout/#/' ./prepull.sh
 sed -i 's/docker login/#/' ./prepull.sh
 
-
+#!/bin/bash
 #-----------------Installation--------------------------------------------------------------------
 #--------------Reloading docker images-----------------------------------------------------------
 echo "docker" | sh ./prepull.sh

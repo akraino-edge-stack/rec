@@ -1,3 +1,4 @@
+#!/bin/bash
 #-----------Pre-modification------------------------------
 cd RIC
 git clone https://gerrit.o-ran-sc.org/r/it/test
