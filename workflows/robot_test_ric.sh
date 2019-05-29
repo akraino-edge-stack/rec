@@ -55,8 +55,11 @@ kubectl exec -n ricplatform -it $ric_robot_pod -- sed -i '17,19 s/^/#/' /var/opt
 #---------show the test cases------------------------------
 cd /home/cloudadmin/RIC/test/ric_robot_suite/helm/ric-robot/
 bash ete-k8s.sh ricplatform health
+#--------------kill helm---------------------------------------------------------------------
+pkill helm
 #----------checking the status of the pods------------------
 command="$(kubectl get po --no-headers --namespace=ricplatform --field-selector status.phase!=Running 2> /dev/null)"
 if [[ $command != "" ]]; then
   exit 1
 fi
+

@@ -125,8 +125,12 @@ sed -i 's,http://127.0.0.1:8879,http://127.0.0.1:8879/charts,g' "ric_install.sh"
 sed -i 's,local,localric,g' "ric_install.sh"
 
 bash -x ./ric_install.sh
+#--------------kill helm---------------------------------------------------------------------
+pkill helm
 #-------------checking the output-------------------------------------------------------------
 command="$(kubectl get po --no-headers --namespace=ricplatform --field-selector status.phase!=Running 2> /dev/null)"
 if [[ $command != "" ]]; then
   exit 1
 fi
+
+

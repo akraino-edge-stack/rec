@@ -57,9 +57,12 @@ helm install localric/nanobot --namespace rictest --name nanobot
 nanobot_pod=$(kubectl get pods -n rictest -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
 sleep 10
 kubectl logs $nanobot_pod -n rictest
-
+#--------------kill helm---------------------------------------------------------------------
+pkill helm
 #------------checking the status of the rictest pod--------------------------------------
 command="$(kubectl get po --no-headers --namespace=rictest --field-selector status.phase=Completed 2> /dev/null)"
 if [[ $command != "" ]]; then
   exit 1
 fi
+
+
