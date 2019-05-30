@@ -58,6 +58,7 @@ bash ete-k8s.sh ricplatform health
 #--------------kill helm---------------------------------------------------------------------
 pkill helm
 #----------checking the status of the pods------------------
+sleep 30
 command="$(kubectl get po --no-headers --namespace=ricplatform --field-selector status.phase!=Running 2> /dev/null)"
 if [[ $command != "" ]]; then
   exit 1

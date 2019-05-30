@@ -60,6 +60,7 @@ kubectl logs $nanobot_pod -n rictest
 #--------------kill helm---------------------------------------------------------------------
 pkill helm
 #------------checking the status of the rictest pod--------------------------------------
+sleep 30
 command="$(kubectl get po --no-headers --namespace=rictest --field-selector status.phase=Completed 2> /dev/null)"
 if [[ $command != "" ]]; then
   exit 1

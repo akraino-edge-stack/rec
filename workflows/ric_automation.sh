@@ -128,9 +128,17 @@ bash -x ./ric_install.sh
 #--------------kill helm---------------------------------------------------------------------
 pkill helm
 #-------------checking the output-------------------------------------------------------------
+for i in `seq 1 10`
+do
 command="$(kubectl get po --no-headers --namespace=ricplatform --field-selector status.phase!=Running 2> /dev/null)"
 if [[ $command != "" ]]; then
-  exit 1
+        sleep 30
+else
+        exit 0
 fi
+done
+exit 1
+
+
 
 
