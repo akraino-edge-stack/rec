@@ -47,10 +47,15 @@ helm repo update
 # helm install local/ric-robot --namespace ricplatform --name ric-robot --set image.repository=snapshot.docker.ranco-dev-tools.eastus.cloudapp.azure.com:10001/test/ric-robot
 #
 helm install localric/ric-robot --namespace ricplatform --name ric-robot
-helm repo update
-#cd ../../../
-ric_robot_pod=$(kubectl get pods -l app.kubernetes.io/instance=ric-robot -n ricplatform -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
-kubectl exec -n ricplatform -it $ric_robot_pod -- sed -i '17,19 s/^/#/' /var/opt/RIC/robot/testsuites/health-check.robot
+TIMEOUT=100
+STATUS=False
+while [ ${TIMEOUT} -gt 0 -a ${STATUS} != 'True' ]; do  sleep 1  TIMEOUT=`expr ${TIMEOUT} - 1`
+STATUS=`kubectl -n ricplatform get deployment ric-robot \ -o template \ --template='{{if (or .status.readyReplicas 0) | eq .status.replicas}}True{{else}}False{{end}}'`
+done
+if [ $STATUS != 'True']; then
+echo ERROR
+exit 1
+fi
 
 #---------show the test cases------------------------------
 cd /home/cloudadmin/RIC/test/ric_robot_suite/helm/ric-robot/
