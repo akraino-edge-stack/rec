@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "44ba3e10_d9843f04",
+        "filename": "workflows/robot_test_ric.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 52
+      },
+      "writtenOn": "2019-06-27T16:29:39Z",
+      "side": 1,
+      "message": "does this have a return code?\nI think it should return success if it runs a test, even if the test fails.\n\nIs there a way we can return the actual test result as text to jenkins. \nSo if we can actually run a test, that is a success",
+      "revId": "55ef31a931d74c22cafdf4909eb10e2e437efdf0",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    }
+  ]
+}
