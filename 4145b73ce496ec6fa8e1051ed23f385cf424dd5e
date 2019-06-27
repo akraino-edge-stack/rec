@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6be63e38_f02ad6d6",
+        "filename": "workflows/robot_test_ric.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 52
+      },
+      "writtenOn": "2019-06-27T14:59:31Z",
+      "side": 1,
+      "message": "not needed",
+      "revId": "4145b73ce496ec6fa8e1051ed23f385cf424dd5e",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1149eb81_daf4fca6",
+        "filename": "workflows/robot_test_ric.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 52
+      },
+      "writtenOn": "2019-06-27T14:59:31Z",
+      "side": 1,
+      "message": "not needed",
+      "revId": "4145b73ce496ec6fa8e1051ed23f385cf424dd5e",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fae6bc95_ca093485",
+        "filename": "workflows/robot_test_ric.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 52
+      },
+      "writtenOn": "2019-06-27T14:59:31Z",
+      "side": 1,
+      "message": "if this fails after 10 tries, we ought to return fail for everything because it means the robot pod never came up.",
+      "revId": "4145b73ce496ec6fa8e1051ed23f385cf424dd5e",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b5ae56a4_4324cc73",
+        "filename": "workflows/robot_test_ric.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 52
+      },
+      "writtenOn": "2019-06-27T14:59:31Z",
+      "side": 1,
+      "message": "does this return any status? i think we agree that it may not succeed for all tests, but it should at least run them.  so the return status of this deployment ought to be the union of success to execute tests plus all the containers showing running state.",
+      "revId": "4145b73ce496ec6fa8e1051ed23f385cf424dd5e",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    }
+  ]
+}
