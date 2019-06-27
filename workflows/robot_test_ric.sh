@@ -47,8 +47,6 @@ helm repo update
 # helm install local/ric-robot --namespace ricplatform --name ric-robot --set image.repository=snapshot.docker.ranco-dev-tools.eastus.cloudapp.azure.com:10001/test/ric-robot
 #
 helm install localric/ric-robot --namespace ricplatform --name ric-robot
-helm repo update
-#cd ../../../
 for i in `seq 1 10`
 do
 command="$(kubectl get po --no-headers --namespace=ricplatform --field-selector status.phase!=Running 2> /dev/null)"
@@ -60,6 +58,11 @@ else
   break
 fi
 done
+
+if [[  $i >10 ]]; then
+ exit 1;
+fi
+}
 
 #---------show the test cases------------------------------
 cd /home/cloudadmin/RIC/test/ric_robot_suite/helm/ric-robot/
