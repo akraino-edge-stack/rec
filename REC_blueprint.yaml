@@ -5,7 +5,7 @@ description: This Blueprint defines an instance of the Radio Edge Cloud (from th
   Telco Appliance family of blueprints).
 yaml:
   # Required hardware profiles (can match on either UUID or name)
-  # Note: UUIDs will likely require a global registry of HW profiles.
+  # Note: UUIDs would likely require a global registry of HW profiles.
   hardware_profile:
     or:
       - { uuid: 8a17384a-71d4-11e9-9e4c-0017f20fe1b8 }
@@ -14,18 +14,12 @@ yaml:
   workflow:
     # Workflow that is invoked when the POD is created
     create:
-      # This URL is a direct link to the REC pod_create workflow on Gerrit.
-      # It lacks several required input variables, so should be copied to a
-      # local webserver and customized with input variables before deployment.
-      # Change this URL to the new location of the workflow script.
-      url: https://gerrit.akraino.org/r/gitweb?p=rec.git;a=blob_plain;f=workflows/pod_create.sh;hb=HEAD
+      url: 'http://www.example.org/blueprints/REC/REC_create.py'
+      components:
+        # This script is used to generate self-signed certs for the remote-installer
+        - 'http://www.example.org/blueprints/REC/gencerts.sh'
       input_schema:
         iso_primary: { type: string }
         iso_secondary: { type: string }
         input_yaml: { type: string }
-
-
-    # Workflow that is invoked when the POD is deleted
-#    delete:
-#    The delete workflow has not been written yet. This is a placeholder.
-      #url: https://gerrit.akraino.org/r/gitweb?p=rec.git;a=blob_plain;f=workflows/pod_delete.sh;hb=HEAD
+        rc_host: { type: string }
