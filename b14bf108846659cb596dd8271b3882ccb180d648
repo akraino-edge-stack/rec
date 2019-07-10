@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "794b71b4_6467b538",
+        "filename": "index.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2019-07-10T21:01:47Z",
+      "side": 1,
+      "message": "Bleueprint -\u003e Blueprint",
+      "range": {
+        "startLine": 107,
+        "startChar": 75,
+        "endLine": 107,
+        "endChar": 85
+      },
+      "revId": "b14bf108846659cb596dd8271b3882ccb180d648",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e39bb76e_c0cb068f",
+        "filename": "index.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2019-07-10T21:01:47Z",
+      "side": 1,
+      "message": "Maybe mention that build 9 was the Release 1 image as I mentioned here https://wiki.akraino.org/display/AK/REC+Installation+Guide#RECInstallationGuide-ObtainingtheISOImage and/or point them to the CD logs directory to ensure that they choose an ISO that has passed CD. We know that there are ISOs that are broken, so it would be good to at least warn people that not every ISO will work.",
+      "revId": "b14bf108846659cb596dd8271b3882ccb180d648",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8cbcdd24_78d26901",
+        "filename": "workflows/REC_create.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2019-07-10T21:01:47Z",
+      "side": 1,
+      "message": "I guess we don\u0027t have a style guide yet, but tabs are generally a bad idea in Python. Not forbidden, but at least discouraged.",
+      "revId": "b14bf108846659cb596dd8271b3882ccb180d648",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    }
+  ]
+}
