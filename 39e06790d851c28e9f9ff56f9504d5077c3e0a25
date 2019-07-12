@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3cbb5d7d_b604de0f",
+        "filename": "workflows/robot_test_ric.sh",
+        "patchSetId": 6
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2019-07-12T19:15:31Z",
+      "side": 1,
+      "message": "Did you check with John? Is his \"not needed\" comment on patch set 1 referring to line 50?",
+      "revId": "39e06790d851c28e9f9ff56f9504d5077c3e0a25",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    }
+  ]
+}
