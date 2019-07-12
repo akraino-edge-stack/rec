@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7627abf0_2de087c0",
+        "filename": "workflows/robot_test_ric.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2019-07-12T10:29:44Z",
+      "side": 1,
+      "message": "I think John\u0027s \"not needed\" on patch set 1 was referring to this \"helm repo update\" line.",
+      "revId": "96ed600b0012709de7ee7bfc1972325024186b1b",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b9712577_61b9522f",
+        "filename": "workflows/robot_test_ric.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2019-07-12T10:29:44Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace. It keeps Gerrit happy. The red bars Gerrit shows are distracting.\n\nDepending on what editor you use, you can probably configure it to either automatically remove trailing whitespace or highlight it so you notice it before committing code.",
+      "revId": "96ed600b0012709de7ee7bfc1972325024186b1b",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "92fa09a6_1f2de9ef",
+        "filename": "workflows/robot_test_ric.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2019-07-12T10:29:44Z",
+      "side": 1,
+      "message": "You probably don\u0027t need to mention that it was John\u0027s suggestion, but if you do, you should fix the spelling of his name.",
+      "range": {
+        "startLine": 59,
+        "startChar": 18,
+        "endLine": 59,
+        "endChar": 41
+      },
+      "revId": "96ed600b0012709de7ee7bfc1972325024186b1b",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    }
+  ]
+}
