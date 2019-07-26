@@ -27,7 +27,7 @@ this script (via the INPUT.yaml file) are:
 
 import datetime
 import docker
-import requests
+import requests, urllib3
 import os, sys, time, yaml
 import POD
 
@@ -43,9 +43,12 @@ HTTPS_PORT   = 8443
 API_PORT     = 15101
 ADMIN_PASSWD = 'recAdm1n'
 REMOVE_ISO   = False
+HOST_IP      = '127.0.0.1'
 
 def start(ds, **kwargs):
     # Read the user input from the POST
+    global HOST_IP
+    urllib3.disable_warnings()
     yaml = read_yaml(WORKDIR + '/INPUT.yaml')
     REC_ISO_IMAGE_NAME        = yaml['iso_primary']
     REC_PROVISIONING_ISO_NAME = yaml['iso_secondary']
