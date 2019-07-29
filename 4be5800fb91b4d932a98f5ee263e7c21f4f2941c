@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "45240435_8d4ed743",
+        "filename": "workflows/REC_create.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2019-07-29T17:00:41Z",
+      "side": 1,
+      "message": "I\u0027m ok with this for now, but I think we should create a Jira story (for sometime next year) to provision certs/CA so that we actually fix the thing that the warning is about instead of just suppressing the warning. What do you think?",
+      "revId": "4be5800fb91b4d932a98f5ee263e7c21f4f2941c",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    }
+  ]
+}
