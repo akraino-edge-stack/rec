@@ -1,25 +1,46 @@
+#
+# Copyright (c) 2019 AT&T Intellectual Property. All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#        https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+#  This file defines version 1.0.0 of the REC (Radio Edge Cloud) blueprint,
+#  for use by the regional controller).  It should be loaded into the RC
+#  (using the "rc_cli blueprint create" command) before a POD is created.
+#
+---
 blueprint: 1.0.0
 name: Radio Edge Cloud
 version: 1.0.0
-description: This Blueprint defines an instance of the Radio Edge Cloud (from the
-  Telco Appliance family of blueprints).
+description: This Blueprint defines an instance of the Radio Edge Cloud
+  (from the Telco Appliance family of blueprints).
 yaml:
   # Required hardware profiles (can match on either UUID or name)
   # Note: UUIDs would likely require a global registry of HW profiles.
   hardware_profile:
     or:
-      - { uuid: 8a17384a-71d4-11e9-9e4c-0017f20fe1b8 }
-      - { uuid: 9897a008-71d4-11e9-8bda-0017f20dbff8 }
-      - { uuid: a4b4a570-71d4-11e9-adc2-0017f208759e }
+      - {uuid: 8a17384a-71d4-11e9-9e4c-0017f20fe1b8}
+      - {uuid: 9897a008-71d4-11e9-8bda-0017f20dbff8}
+      - {uuid: a4b4a570-71d4-11e9-adc2-0017f208759e}
   workflow:
     # Workflow that is invoked when the POD is created
     create:
       url: 'http://www.example.org/blueprints/REC/REC_create.py'
       components:
-        # This script is used to generate self-signed certs for the remote-installer
+        # This script is used by the REC_create.py workflow to generate
+        # self-signed certs for the remote-installer
         - 'http://www.example.org/blueprints/REC/gencerts.sh'
       input_schema:
-        iso_primary: { type: string }
-        iso_secondary: { type: string }
-        input_yaml: { type: string }
-        rc_host: { type: string }
+        iso_primary: {type: string}
+        iso_secondary: {type: string}
+        input_yaml: {type: string}
+        rc_host: {type: string}
