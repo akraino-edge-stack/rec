@@ -142,6 +142,15 @@ def send_request(ri_ip, CLOUDNAME, ISO, BOOTISO):
     print(response)
     return response.json().get('uuid')
 
+def create_podevent(msg='Default msg', level='INFO'):
+    API_HOST = 'http://arc-api:8080'
+    payload  = {'name': 'workflow', 'password': 'admin123'}
+    response = requests.post(API_HOST+'/api/v1/login', json=payload)
+    token    = response.headers['X-ARC-Token']
+    headers  = {'X-ARC-Token': token}
+    payload  = {'uuid': POD.POD, 'level': level, 'message': msg}
+    response = requests.post(API_HOST+'/api/v1/podevent', headers=headers, json=payload)
+
 def wait_for_completion(ri_ip, id, ntimes):
     """
     Wait (up to ntimes minutes) for the remote_installer to finish.
@@ -150,17 +159,21 @@ def wait_for_completion(ri_ip, id, ntimes):
     status = 'ongoing'
     URL    = 'https://%s:%d/v1/installations/%s/state' % (ri_ip, API_PORT, id)
     certs  = (CERT_DIR+'/clientcert.pem', CERT_DIR+'/clientkey.pem')
+    lastevent = ''
     while status == 'ongoing' and ntimes > 0:
         time.sleep(60)
         response = requests.get(URL, cert=certs, verify=False)
         j = response.json()
         t = (
-            datetime.datetime.now().strftime('%x %X'),
             str(j.get('status')),
             str(j.get('percentage')),
             str(j.get('description'))
         )
-        print('%s: Status is %s (%s) %s' % t)
+        event = 'Status is %s (%s) %s' % t
+        print('%s: %s' % (datetime.datetime.now().strftime('%x %X'), event))
+        if event != lastevent:
+            create_podevent(event)
+        lastevent = event
         status = j.get('status')
         ntimes = ntimes - 1
     return status != 'completed'
