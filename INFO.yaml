@@ -1,0 +1,53 @@
+---
+project: 'rec'
+project_creation_date: '2019-12-16'
+project_category: ''
+lifecycle_state: 'Mature'
+project_lead: &akraino_rec_ptl
+    name: 'Paul Carver'
+    email: 'pcarver@att.com'
+    id: 'pcarver'
+    company: 'AT&T'
+    timezone: 'America/New_york'
+primary_contact: *akraino_rec_ptl
+issue_tracking:
+    type: 'jira'
+    url: 'https://jira.akraino.org/projects/'
+    key: 'rec'
+mailing_list:
+    type: 'groups.io'
+    url: 'blueprints@lists.akraino.org'
+    tag: '[]'
+realtime_discussion:
+    type: 'irc'
+    server: 'freenode.net'
+    channel: '#akraino'
+meetings:
+    - type: 'gotomeeting+irc'
+      agenda: 'https://wiki.akraino.org/display/'
+      url: ''
+      server: 'freenode.net'
+      channel: '#akraino'
+      repeats: ''
+      time: ''
+repositories:
+    - rec
+committers:
+    - <<: *akraino_rec_ptl
+    - name: 'Levente Kálé'
+      email: 'levente.kale@nokia.com'
+      company: 'Nokia'
+      id: 'Levovar'
+      timezone: 'Europe/Budapest'
+    - name: 'Krisztián Lengyel'
+      email: 'krisztian.lengyel@nokia.com'
+      company: 'Nokia'
+      id: 'klengyel'
+      timezone: 'Europe/Budapest'
+tsc:
+    # yamllint disable rule:line-length
+    approval: 'https://docs.google.com/document/d/1F9udcqkSld4trsR0-zarRrG05jEaaR1DNEiDtEcBtLU/edit'
+    changes:
+        - type: ''
+          name: ''
+          link: ''
