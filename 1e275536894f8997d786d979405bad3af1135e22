@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4443f34c_5cf1bdc5",
+        "filename": "INFO.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 133
+      },
+      "writtenOn": "2020-01-16T01:37:33Z",
+      "side": 1,
+      "message": "Timezones are not required, but can be helpful.",
+      "range": {
+        "startLine": 11,
+        "startChar": 14,
+        "endLine": 11,
+        "endChar": 31
+      },
+      "revId": "1e275536894f8997d786d979405bad3af1135e22",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "58690fe0_569f19f6",
+        "filename": "INFO.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 133
+      },
+      "writtenOn": "2020-01-16T01:37:33Z",
+      "side": 1,
+      "message": "Please include a link to the project approval (either the project\u0027s wiki page, or TSC meeting notes showing the project\u0027s approval).",
+      "range": {
+        "startLine": 49,
+        "startChar": 4,
+        "endLine": 49,
+        "endChar": 23
+      },
+      "revId": "1e275536894f8997d786d979405bad3af1135e22",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": true
+    }
+  ]
+}
