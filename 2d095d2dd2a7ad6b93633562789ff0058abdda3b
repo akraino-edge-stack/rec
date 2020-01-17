@@ -16,6 +16,24 @@
       "revId": "2d095d2dd2a7ad6b93633562789ff0058abdda3b",
       "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "413da02a_2d5690a6",
+        "filename": "INFO.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2020-01-17T16:01:04Z",
+      "side": 1,
+      "message": "Do you want Tapio to revise this change or could we merge this and then do a second change to add Bálint? I like the idea of doing a second change because then we fully exercise the new automation to make sure that everything works as expected. (i.e. that merging a change to this file actually causes the permissions to be updated)",
+      "parentUuid": "3b2b708a_6aaf7167",
+      "revId": "2d095d2dd2a7ad6b93633562789ff0058abdda3b",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": true
     }
   ]
 }
