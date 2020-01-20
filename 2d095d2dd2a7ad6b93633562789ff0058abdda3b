@@ -34,6 +34,24 @@
       "revId": "2d095d2dd2a7ad6b93633562789ff0058abdda3b",
       "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9c8e4b26_76009668",
+        "filename": "INFO.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 145
+      },
+      "writtenOn": "2020-01-20T07:43:11Z",
+      "side": 1,
+      "message": "Yes, my plan was to do first an INFO.yaml with current committers and then do another with an extended set. Just to get something approved, like Paul said.",
+      "parentUuid": "413da02a_2d5690a6",
+      "revId": "2d095d2dd2a7ad6b93633562789ff0058abdda3b",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
     }
   ]
 }
