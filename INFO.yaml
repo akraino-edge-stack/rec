@@ -39,11 +39,6 @@ committers:
       company: 'Nokia'
       id: 'Levovar'
       timezone: 'Europe/Budapest'
-    - name: 'Krisztián Lengyel'
-      email: 'krisztian.lengyel@nokia.com'
-      company: 'Nokia'
-      id: 'klengyel'
-      timezone: 'Europe/Budapest'
 tsc:
     # yamllint disable rule:line-length
     approval: 'https://docs.google.com/document/d/1F9udcqkSld4trsR0-zarRrG05jEaaR1DNEiDtEcBtLU/edit'
