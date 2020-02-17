@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8e963218_cbb0aa10",
+        "filename": "objects.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 43
+      },
+      "writtenOn": "2020-02-17T18:44:10Z",
+      "side": 1,
+      "message": "I think Airframe may be a Nokia trademark. This should probably be OpenEdge instead.",
+      "range": {
+        "startLine": 45,
+        "startChar": 18,
+        "endLine": 45,
+        "endChar": 26
+      },
+      "revId": "f4566eb598e6265fcc70a42e1824e31d2b260122",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
+    }
+  ]
+}
