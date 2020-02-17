@@ -27,10 +27,22 @@ hardware:
     description: Nokia OpenEdge hardware for the REC Blueprint
     yaml:
       todo: put hardware details here
+      datasheet: https://onestore.nokia.com/asset/205107
       rack_layout:
         height: 1U
         chassis:
-          layout: airframe
+          layout: open_edge1.3
+          height: 3U
+          units: 5
+  Ampere_OpenEdge:
+    uuid: fc5dfbce-51b1-11ea-b4df-0017f208759e
+    description: Ampere OpenEdge hardware (ARM) for the REC Blueprint
+    yaml:
+      todo: put hardware details here
+      rack_layout:
+        height: 1U
+        chassis:
+          layout: open_edge1.3
           height: 3U
           units: 5
   Dell_740xd:
@@ -38,6 +50,8 @@ hardware:
     description: Dell 740xd hardware for the REC Blueprint
     yaml:
       todo: put hardware details here
+      datasheet: https://i.dell.com/sites/csdocuments/\
+        Shared-Content_data-Sheets_Documents/en/poweredge-r740xd-spec-sheet.pdf
       rack_layout:
         height: 2U
   HPE_DL380g10:
@@ -45,6 +59,7 @@ hardware:
     description: HPE DL380 Gen 10 hardware for the REC Blueprint
     yaml:
       todo: put hardware details here
+      datasheet: https://h20195.www2.hpe.com/v2/getpdf.aspx/a00008180ENUS.pdf
       rack_layout:
         height: 2U
 
