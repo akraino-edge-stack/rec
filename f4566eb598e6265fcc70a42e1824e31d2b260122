@@ -46,6 +46,30 @@
       "revId": "f4566eb598e6265fcc70a42e1824e31d2b260122",
       "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aa775878_ab58e03c",
+        "filename": "objects.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 45
+      },
+      "writtenOn": "2020-02-19T13:43:58Z",
+      "side": 1,
+      "message": "Not an option.  The portal requires this section in order to display the rack layout correctly.  Dell/HP are \"regular\" 2U rack mounted units (sans chassis)",
+      "parentUuid": "0997c2e6_1da19c47",
+      "range": {
+        "startLine": 45,
+        "startChar": 18,
+        "endLine": 45,
+        "endChar": 26
+      },
+      "revId": "f4566eb598e6265fcc70a42e1824e31d2b260122",
+      "serverId": "4cada01b-0314-4fe0-84a1-f9ddc89863f9",
+      "unresolved": false
     }
   ]
 }
