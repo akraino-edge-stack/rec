@@ -2,4 +2,3 @@
 #
 0706f97cf3b2243094a8f24452092769b1065db0                               	GitHub Replication
 d23f0c62b374e67ba67c52551b8fc4243810ee21                               	saml/akraino-gerrit-rec-committers
-ldap:cn=akraino-gerrit-rec-committers,ou=Groups,dc=freestandards,dc=org	ldap/akraino-gerrit-rec-committers
